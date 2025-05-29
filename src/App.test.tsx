@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import App from './App';
 
-// 1. Basic Render Tests - Check if components show up
+// Basic Render Tests
 describe('App Component Basic Renders', () => {
   beforeEach(() => {
     render(<App />);
@@ -27,7 +27,7 @@ describe('App Component Basic Renders', () => {
   });
 });
 
-// 2. User Interaction Tests - Check if things work when users do something
+// User Interaction Tests
 describe('Search Functionality', () => {
   beforeEach(() => {
     render(<App />);
@@ -50,7 +50,7 @@ describe('Search Functionality', () => {
   });
 });
 
-// 3. Loading State Tests - Check if loading states work
+// Loading State Tests
 describe('Loading States', () => {
   beforeEach(() => {
     render(<App />);
@@ -71,7 +71,7 @@ describe('Loading States', () => {
   });
 });
 
-// 4. Error State Tests - Check if errors are handled
+// Error State Tests - Check if errors are handled
 describe('Error States', () => {
   beforeEach(() => {
     render(<App />);
