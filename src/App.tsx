@@ -34,8 +34,8 @@ function App() {
   // Function to copy a GIF's URL
   const handleCopyUrl = async (gif: GiphyGif) => {
     try {
-      // Try to copy the URL
-      await navigator.clipboard.writeText(gif.images.original.url);
+      // Copy the fixed_width URL
+      await navigator.clipboard.writeText(gif.images.fixed_width.url);
       setCopiedId(gif.id); // Remember which GIF was copied to compare with the current GIF
       // Reset the "Copied!" message after 2 seconds
       setTimeout(() => setCopiedId(''), 2000);
@@ -65,12 +65,22 @@ function App() {
           {/* Map through generated GIFs and show each one */}
           {gifs.map((gif) => (
             <div key={gif.id} className="gif-item">
-              {/* The GIF image */}
-              <img
-                src={gif.images.original.url}
-                alt={gif.title}
-                loading="lazy" // Only load images when they're about to be visible
-              />
+              {/* Use webp format for better performance */}
+              <picture>
+                {/* Try WebP first if browser supports it */}
+                <source
+                  srcSet={gif.images.fixed_width.webp}
+                  type="image/webp"
+                />
+                {/* Fallback to regular GIF */}
+                <img
+                  src={gif.images.fixed_width.url}
+                  alt={gif.title}
+                  loading="lazy"
+                  width={gif.images.fixed_width.width}
+                  height={gif.images.fixed_width.height}
+                />
+              </picture>
               {/* Buttons for copying URL and viewing on Giphy */}
               <div className="gif-actions">
                 <button

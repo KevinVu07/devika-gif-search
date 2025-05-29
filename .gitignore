@@ -134,3 +134,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# AWS credentials
+.aws
+**/aws.json
+**/aws.*.json
+.env.aws*
+credentials
+config

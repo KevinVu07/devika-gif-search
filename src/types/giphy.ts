@@ -6,7 +6,20 @@ export interface GiphyGif {
   images: {
     original: {
       url: string;     // The URL of the original size GIF
-    }
+      width: string;
+      height: string;
+    };
+    fixed_width: {
+      url: string;     // Smaller format for faster loading
+      width: string;
+      height: string;
+      webp: string;
+    };
+    preview_gif: {     // Tiny version for quick loading
+      url: string;
+      width: string;
+      height: string;
+    };
   }
 }
 
