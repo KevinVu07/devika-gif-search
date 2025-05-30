@@ -35,6 +35,7 @@
   "scripts": {
     "build": "NODE_OPTIONS=--max_old_space_size=8192 GENERATE_SOURCEMAP=false react-scripts build",
     "start": "react-scripts start",
+    "test": "react-scripts test",
     "deploy:staging": "npm run build && npx serverless deploy --verbose --stage staging --region ap-southeast-2 --aws-profile gif-search",
     "remove:staging": "npx serverless remove --stage staging --region ap-southeast-2 --aws-profile gif-search",
     "deploy:prod": "npm run build && npx serverless deploy --verbose --stage prod --region ap-southeast-2 --aws-profile gif-search",
@@ -93,5 +94,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(axios)/)"
+    ],
+    "moduleNameMapper": {
+      "^axios$": "axios/dist/axios.js"
+    }
   }
 }
