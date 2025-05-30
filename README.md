@@ -13,7 +13,7 @@ A modern React application that allows users to search and interact with GIFs us
 
 ## 🎥 Demo
 
-[![Demo Video](https://img.youtube.com/vi/fOVvhS5uqs4/maxresdefault.jpg)](https://youtu.be/fOVvhS5uqs4)
+[![Demo Video](https://img.youtube.com/vi/fOVvhS5uqs4/hqdefault.jpg)](https://youtu.be/fOVvhS5uqs4)
 
 _Click the image above to watch the demo video on YouTube_
 
