@@ -11,6 +11,12 @@ A modern React application that allows users to search and interact with GIFs us
 - Loading states and error handling
 - WebP format support for optimal performance
 
+## 🎥 Demo
+
+[![Demo Video](https://img.youtube.com/vi/fOVvhS5uqs4/maxresdefault.jpg)](https://youtu.be/fOVvhS5uqs4)
+
+_Click the image above to watch the demo video on YouTube_
+
 ## 🚀 Live Demo
 
 - Production: https://d22pvh2ls1mdfs.cloudfront.net
