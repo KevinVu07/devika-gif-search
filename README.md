@@ -68,9 +68,6 @@ npm test
 Tests cover:
 
 - Basic component rendering
-- Search functionality
-- Loading states
-- Error handling
 
 ## 📦 Build
 
