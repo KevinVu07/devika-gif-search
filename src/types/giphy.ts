@@ -26,5 +26,15 @@ export interface GiphyGif {
 // This type defines what we get back from the API when we search
 export interface SearchResponse {
   data: GiphyGif[];    // An array of GIFs
+  meta: {
+    status: number;
+    msg: string;
+    response_id: string;
+  };
+  pagination: {
+    total_count: number;
+    count: number;
+    offset: number;
+  };
 } 
 

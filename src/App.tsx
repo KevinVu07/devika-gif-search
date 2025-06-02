@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SearchBar from './components/SearchBar/SearchBar';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 import { searchGifs } from './services/giphyService';

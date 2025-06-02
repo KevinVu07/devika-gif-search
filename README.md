@@ -13,9 +13,21 @@ A modern React application that allows users to search and interact with GIFs us
 
 ## 🎥 Demo
 
-[![Demo Video](https://img.youtube.com/vi/fOVvhS5uqs4/hqdefault.jpg)](https://youtu.be/fOVvhS5uqs4)
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=fOVvhS5uqs4">
+    <img src="https://img.youtube.com/vi/fOVvhS5uqs4/hqdefault.jpg" alt="Demo Video" style="max-width:100%;">
+  </a>
+</div>
 
-_Click the image above to watch the demo video on YouTube_
+_Note: GitHub's README doesn't support direct video playback. Click the preview above to watch the demo on YouTube._
+
+<details>
+<summary>Alternative Video Links</summary>
+
+- [Watch on YouTube](https://youtu.be/fOVvhS5uqs4)
+- [Direct video link](https://www.youtube.com/watch?v=fOVvhS5uqs4)
+
+</details>
 
 ## 🚀 Live Demo
 
