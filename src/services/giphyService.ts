@@ -12,7 +12,6 @@ export const searchGifs = async (searchTerm: string) => {
         limit: 20
       }
     });
-    console.log(response);
     return response.data;
   } catch (error) {
     if (axios.isAxiosError(error)) {
