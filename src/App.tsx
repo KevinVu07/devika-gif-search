@@ -51,7 +51,7 @@ function App() {
         <i>Powered by GIPHY</i>
       </p>
 
-      {/* Search bar - pass in as props are search function and loading state */}
+      {/* Search bar - pass in as props are search function and loading state  */}
       <SearchBar onSearch={handleSearch} isLoading={isLoading} />
 
       {/* Show error message if there is one */}
