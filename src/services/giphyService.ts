@@ -2,6 +2,7 @@ import axios from 'axios';
 import { config } from '../config';
 import { SearchResponse } from '../types/giphy';
 
+// comment to push to commit for staging testing
 export const searchGifs = async (searchTerm: string) => {
   // Input validation for XSS protection
   if (!searchTerm || typeof searchTerm !== 'string') {
