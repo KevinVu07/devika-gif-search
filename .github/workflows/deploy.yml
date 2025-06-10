@@ -5,7 +5,7 @@ name: CI-CD
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main, prod ]
+    branches: [main, prod]
   # pull_request:
   #   branches: [ main, prod ]
   # Allows you to run this workflow manually from the Actions tab
@@ -15,9 +15,11 @@ on:
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  AWS_PROFILE: "gif-search"
+  AWS_PROFILE: 'gif-search'
   # Change if you would like to deploy elsewhere
-  AWS_REGION: "ap-southeast-2"
+  AWS_REGION: 'ap-southeast-2'
+  # React environment variable for Giphy API
+  REACT_APP_GIPHY_API_KEY: ${{ secrets.REACT_APP_GIPHY_API_KEY }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

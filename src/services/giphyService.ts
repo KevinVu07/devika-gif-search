@@ -25,8 +25,10 @@ export const searchGifs = async (searchTerm: string) => {
         limit: 20
       }
     });
+    console.log("Search Response:", response.data);
     return response.data;
   } catch (error) {
+    console.log("API call error:", error);
     if (axios.isAxiosError(error)) {
       console.error('API Error:', error.response?.data || error.message);
     } else {
